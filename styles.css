@@ -417,39 +417,33 @@ header {
     margin-bottom: 0.5rem;
 }
 
-/* Visitor Counter Section */
-.visitor-counter-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 0;
-}
-
-.visitor-counter {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-size: 1.25rem;
-}
-
-.counter-label {
-    font-weight: 600;
-    color: var(--text-dark);
-}
-
-.counter-display {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--primary-color);
-    font-family: 'Courier New', monospace;
-}
-
 /* Footer */
 footer {
     background-color: var(--text-dark);
     color: white;
     text-align: center;
     padding: 2rem;
+}
+
+footer .visitor-counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+footer .counter-label {
+    font-weight: 500;
+}
+
+footer .counter-display {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fbbf24;
+    font-family: 'Courier New', monospace;
 }
 
 /* Responsive Design */
@@ -495,14 +489,6 @@ footer {
     .education-grid {
         grid-template-columns: 1fr;
     }
-
-    .visitor-counter {
-        font-size: 1.1rem;
-    }
-
-    .counter-display {
-        font-size: 1.3rem;
-    }
 }
 
 @media (max-width: 480px) {
@@ -519,11 +505,11 @@ footer {
         padding: 3rem 1rem;
     }
 
-    .visitor-counter {
-        font-size: 1rem;
+    footer .visitor-counter {
+        font-size: 0.8rem;
     }
 
-    .counter-display {
-        font-size: 1.2rem;
+    footer .counter-display {
+        font-size: 0.9rem;
     }
 }
