@@ -225,7 +225,7 @@ header {
 }
 
 .skill-card li::before {
-    content: '';
+    content: '??;
     position: absolute;
     left: 0;
     color: var(--primary-color);
@@ -323,7 +323,7 @@ header {
 }
 
 .timeline-content li::before {
-    content: '';
+    content: '??;
     position: absolute;
     left: 0;
     color: var(--primary-color);
@@ -377,7 +377,7 @@ header {
 }
 
 .education-card li::before {
-    content: '';
+    content: '??';
     position: absolute;
     left: 0;
     font-size: 0.875rem;
@@ -415,65 +415,6 @@ header {
     color: var(--primary-color);
     display: block;
     margin-bottom: 0.5rem;
-}
-
-/* Visitor Counter Section */
-.visitor-counter-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 0;
-}
-
-.visitor-counter {
-    background: linear-gradient(145deg, #ffffff, #f0f0f0);
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    padding: 3rem 4rem;
-    text-align: center;
-    max-width: 500px;
-    width: 100%;
-    border: 3px solid var(--primary-color);
-}
-
-.counter-icon {
-    color: var(--primary-color);
-    margin-bottom: 1.5rem;
-    display: flex;
-    justify-content: center;
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-}
-
-.counter-label {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: var(--text-dark);
-    margin-bottom: 1rem;
-}
-
-.counter-display {
-    font-size: 4rem;
-    font-weight: 700;
-    color: var(--primary-color);
-    margin: 1rem 0;
-    font-family: 'Courier New', monospace;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.counter-sublabel {
-    font-size: 1rem;
-    color: var(--text-light);
-    margin-top: 1rem;
-    font-style: italic;
 }
 
 /* Footer */
@@ -527,14 +468,6 @@ footer {
     .education-grid {
         grid-template-columns: 1fr;
     }
-
-    .visitor-counter {
-        padding: 2rem;
-    }
-
-    .counter-display {
-        font-size: 3rem;
-    }
 }
 
 @media (max-width: 480px) {
@@ -549,13 +482,5 @@ footer {
 
     .section {
         padding: 3rem 1rem;
-    }
-
-    .visitor-counter {
-        padding: 1.5rem;
-    }
-
-    .counter-display {
-        font-size: 2.5rem;
     }
 }

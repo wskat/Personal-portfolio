@@ -17,7 +17,6 @@
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#education">Education</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="#calculator">Calculator</a></li>
                 </ul>
             </div>
         </nav>
@@ -162,41 +161,20 @@
             </div>
         </section>
 
-        <!-- Calculator Section -->
-        <section id="calculator" class="section section-alt">
+        <!-- Visitor Counter Section -->
+        <section id="visitor-counter" class="section section-alt">
             <div class="container">
-                <h2 class="section-title">計算器 (Calculator)</h2>
-                <div class="calculator-wrapper">
-                    <div class="calculator">
-                        <div class="calculator-display">
-                            <div class="calculator-previous" id="previous-operand"></div>
-                            <div class="calculator-current" id="current-operand">0</div>
+                <h2 class="section-title">訪客人數 (Visitor Counter)</h2>
+                <div class="visitor-counter-wrapper">
+                    <div class="visitor-counter">
+                        <div class="counter-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
+                                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                            </svg>
                         </div>
-                        <div class="calculator-buttons">
-                            <button class="calc-btn calc-btn-function" onclick="calculator.clear()">AC</button>
-                            <button class="calc-btn calc-btn-function" onclick="calculator.delete()">DEL</button>
-                            <button class="calc-btn calc-btn-function" onclick="calculator.chooseOperation('%')">%</button>
-                            <button class="calc-btn calc-btn-operator" onclick="calculator.chooseOperation('')"></button>
-                            
-                            <button class="calc-btn calc-btn-number" onclick="calculator.appendNumber('7')">7</button>
-                            <button class="calc-btn calc-btn-number" onclick="calculator.appendNumber('8')">8</button>
-                            <button class="calc-btn calc-btn-number" onclick="calculator.appendNumber('9')">9</button>
-                            <button class="calc-btn calc-btn-operator" onclick="calculator.chooseOperation('')"></button>
-                            
-                            <button class="calc-btn calc-btn-number" onclick="calculator.appendNumber('4')">4</button>
-                            <button class="calc-btn calc-btn-number" onclick="calculator.appendNumber('5')">5</button>
-                            <button class="calc-btn calc-btn-number" onclick="calculator.appendNumber('6')">6</button>
-                            <button class="calc-btn calc-btn-operator" onclick="calculator.chooseOperation('-')">-</button>
-                            
-                            <button class="calc-btn calc-btn-number" onclick="calculator.appendNumber('1')">1</button>
-                            <button class="calc-btn calc-btn-number" onclick="calculator.appendNumber('2')">2</button>
-                            <button class="calc-btn calc-btn-number" onclick="calculator.appendNumber('3')">3</button>
-                            <button class="calc-btn calc-btn-operator" onclick="calculator.chooseOperation('+')">+</button>
-                            
-                            <button class="calc-btn calc-btn-number calc-btn-zero" onclick="calculator.appendNumber('0')">0</button>
-                            <button class="calc-btn calc-btn-number" onclick="calculator.appendNumber('.')">.</button>
-                            <button class="calc-btn calc-btn-equals" onclick="calculator.compute()">=</button>
-                        </div>
+                        <div class="counter-label">Total Visitors / 總訪客數</div>
+                        <div class="counter-display" id="visitor-count">0</div>
+                        <div class="counter-sublabel">Thank you for visiting! / 感謝您的訪問！</div>
                     </div>
                 </div>
             </div>
@@ -209,6 +187,6 @@
         </div>
     </footer>
 
-    <script src="calculator.js"></script>
+    <script src="visitor-counter.js"></script>
 </body>
 </html>
