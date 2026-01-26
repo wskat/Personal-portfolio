@@ -16,6 +16,7 @@
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#education">Education</a></li>
+                    <li><a href="#calculator">Calculator</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -142,8 +143,48 @@
             </div>
         </section>
 
+        <!-- Calculator Section -->
+        <section id="calculator" class="section">
+            <div class="container">
+                <h2 class="section-title">計算器 (Calculator)</h2>
+                <div class="calculator-wrapper">
+                    <div class="calculator">
+                        <div class="calculator-display">
+                            <div class="calculator-previous" id="previous-operand"></div>
+                            <div class="calculator-current" id="current-operand">0</div>
+                        </div>
+                        <div class="calculator-buttons">
+                            <button class="calc-btn calc-btn-function" onclick="calculator.clear()">AC</button>
+                            <button class="calc-btn calc-btn-function" onclick="calculator.delete()">DEL</button>
+                            <button class="calc-btn calc-btn-function" onclick="calculator.chooseOperation('%')">%</button>
+                            <button class="calc-btn calc-btn-operator" onclick="calculator.chooseOperation('')"></button>
+                            
+                            <button class="calc-btn calc-btn-number" onclick="calculator.appendNumber('7')">7</button>
+                            <button class="calc-btn calc-btn-number" onclick="calculator.appendNumber('8')">8</button>
+                            <button class="calc-btn calc-btn-number" onclick="calculator.appendNumber('9')">9</button>
+                            <button class="calc-btn calc-btn-operator" onclick="calculator.chooseOperation('')"></button>
+                            
+                            <button class="calc-btn calc-btn-number" onclick="calculator.appendNumber('4')">4</button>
+                            <button class="calc-btn calc-btn-number" onclick="calculator.appendNumber('5')">5</button>
+                            <button class="calc-btn calc-btn-number" onclick="calculator.appendNumber('6')">6</button>
+                            <button class="calc-btn calc-btn-operator" onclick="calculator.chooseOperation('-')">-</button>
+                            
+                            <button class="calc-btn calc-btn-number" onclick="calculator.appendNumber('1')">1</button>
+                            <button class="calc-btn calc-btn-number" onclick="calculator.appendNumber('2')">2</button>
+                            <button class="calc-btn calc-btn-number" onclick="calculator.appendNumber('3')">3</button>
+                            <button class="calc-btn calc-btn-operator" onclick="calculator.chooseOperation('+')">+</button>
+                            
+                            <button class="calc-btn calc-btn-number calc-btn-zero" onclick="calculator.appendNumber('0')">0</button>
+                            <button class="calc-btn calc-btn-number" onclick="calculator.appendNumber('.')">.</button>
+                            <button class="calc-btn calc-btn-equals" onclick="calculator.compute()">=</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Contact Section -->
-        <section id="contact" class="section">
+        <section id="contact" class="section section-alt">
             <div class="container">
                 <h2 class="section-title">Get In Touch</h2>
                 <div class="contact-content">
@@ -167,5 +208,7 @@
             <p>&copy; 2026 KAT Wing-Sze. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="calculator.js"></script>
 </body>
 </html>
